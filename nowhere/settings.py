@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '456^9z2_za4zzqev)s4_yn2&6a54k)sia-d2bbbilrjxma9re!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
@@ -101,3 +101,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+#use dev settings in dev environment
+if os.environ.get('DEVELOPMENT', None):
+    from nowhere.settings_dev import *
+
