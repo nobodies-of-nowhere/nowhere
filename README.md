@@ -4,5 +4,5 @@ This uses:
   * Postgresql 9.4.1
 
 Deployed on heroku
-  * Master - goingnowhere@herokuapp.com
-  * Dev - goingnowhere-dev@herokuapp.com
+  * Master - http://goingnowhere@herokuapp.com
+  * Dev - http://goingnowhere-dev@herokuapp.com
