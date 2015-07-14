@@ -31,6 +31,11 @@ rbenv install $(cat .ruby-version)
 gem install bundler
 bundle install --no-document
 
+# Setup the databases
+#   You've got a postgres server running, right?
+bundle exec rake db:create
+bundle exec rake db:migrate
+
 # Run the server
 bundle exec rails server
 open http://localhost:3000/
