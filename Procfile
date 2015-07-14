@@ -1,1 +1,0 @@
-web: gunicorn nowhere.wsgi --log-file -
