@@ -1,0 +1,14 @@
+Metrics/LineLength:
+  Max: 80
+
+Style/EmptyLines:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Style/TrailingComma:
+  Enabled: true
