@@ -38,9 +38,12 @@ group :development, :test do
   gem 'rubocop'
   gem 'guard-rspec', require: false
 
-  # Analysis
-  gem 'sandi_meter', require: false
+  # Code analysis
   gem 'flay',        require: false
+  gem 'sandi_meter', require: false
+
+  # Security analysis
+  gem 'brakeman',    require: false
 end
 
 

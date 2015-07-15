@@ -75,3 +75,4 @@ bundle exec flay .
 * [Email validator](https://github.com/balexand/email_validator)
 * [Rack Canonical Host](https://github.com/tylerhunt/rack-canonical-host)
 * [High Voltage Static pages](https://github.com/thoughtbot/high_voltage)
+* [Bullet query profiler](https://github.com/flyerhzm/bullet)
