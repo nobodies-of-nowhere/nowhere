@@ -9,6 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'autoprefixer-rails'
 gem 'normalize-rails'
+gem 'quiet_assets', group: :development
 
 
 # View helpers

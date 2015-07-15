@@ -5,6 +5,18 @@ Nowhere
   * Master - http://goingnowhere.herokuapp.com
   * Dev - http://goingnowhere-dev.herokuapp.com
 
+[Log to STDIO](https://github.com/heroku/rails_stdout_logging)
+
+
+## Spring
+
+This app uses Spring, which is a tool that makes Rails applications load
+faster, but it might prevent backend code from reloading correctly.
+
+If you think your application is running old code, run `spring stop`. And if
+you'd rather not use spring, add `DISABLE_SPRING=1` to your login file.
+
+
 ## Setup
 
 This setup presumes OSX, because I'm too lazy to type Linux stuff. Kinda silly,
@@ -44,3 +56,5 @@ open http://localhost:3000/
 ## Notes
 
 * [Email validator](https://github.com/balexand/email_validator)
+* [Rack Canonical Host](https://github.com/tylerhunt/rack-canonical-host)
+* [High Voltage Static pages](https://github.com/thoughtbot/high_voltage)
