@@ -40,3 +40,7 @@ bundle exec rake db:migrate
 bundle exec rails server
 open http://localhost:3000/
 ```
+
+## Notes
+
+* [Email validator](https://github.com/balexand/email_validator)
