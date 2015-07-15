@@ -37,6 +37,10 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'guard-rspec', require: false
+
+  # Analysis
+  gem 'sandi_meter', require: false
+  gem 'flay',        require: false
 end
 
 

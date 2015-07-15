@@ -53,6 +53,23 @@ bundle exec rails server
 open http://localhost:3000/
 ```
 
+
+## Test it
+
+```sh
+bundle exec rake test
+bundle exec rubocop
+```
+
+
+## Analyse it
+
+```sh
+bundle exec sandi_meter
+bundle exec flay .
+```
+
+
 ## Notes
 
 * [Email validator](https://github.com/balexand/email_validator)
