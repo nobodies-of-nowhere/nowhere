@@ -1,0 +1,15 @@
+/* TEAM */
+
+  Code monkey: Louis Pilfold
+  Site: http://lpil.uk/
+  From: London, UK
+
+/* THANKS */
+
+  Nobodies
+
+/* SITE */
+
+  Ruby
+  Rails
+  SCSS

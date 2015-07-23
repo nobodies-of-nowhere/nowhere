@@ -7,6 +7,8 @@ Nowhere
 
 [Log to STDIO](https://github.com/heroku/rails_stdout_logging)
 
+Installation notes can be found below.
+
 
 ## Spring
 
@@ -15,6 +17,30 @@ faster, but it might prevent backend code from reloading correctly.
 
 If you think your application is running old code, run `spring stop`. And if
 you'd rather not use spring, add `DISABLE_SPRING=1` to your login file.
+
+
+## Test it
+
+```sh
+bundle exec rake test
+bundle exec rubocop
+```
+
+
+## Run it
+
+```sh
+bundle exec rails s
+open http://localhost:3000/
+```
+
+
+## Analyse it
+
+```sh
+bundle exec sandi_meter
+bundle exec flay .
+```
 
 
 ## Setup
@@ -51,22 +77,6 @@ bundle exec rake db:migrate
 # Run the server
 bundle exec rails server
 open http://localhost:3000/
-```
-
-
-## Test it
-
-```sh
-bundle exec rake test
-bundle exec rubocop
-```
-
-
-## Analyse it
-
-```sh
-bundle exec sandi_meter
-bundle exec flay .
 ```
 
 
