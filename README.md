@@ -1,6 +1,9 @@
 Nowhere
 =======
 
+[![Build Status](https://travis-ci.org/nowhere-nobodies/nowhere.svg)](https://travis-ci.org/nowhere-nobodies/nowhere)
+[![Code Climate](https://codeclimate.com/github/nowhere-nobodies/nowhere/badges/gpa.svg)](https://codeclimate.com/github/nowhere-nobodies/nowhere)
+
 (will probably be) Deployed on heroku
   * Master - http://goingnowhere.herokuapp.com
   * Dev - http://goingnowhere-dev.herokuapp.com
