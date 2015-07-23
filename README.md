@@ -4,29 +4,22 @@ Nowhere
 [![Build Status](https://travis-ci.org/nowhere-nobodies/nowhere.svg)](https://travis-ci.org/nowhere-nobodies/nowhere)
 [![Code Climate](https://codeclimate.com/github/nowhere-nobodies/nowhere/badges/gpa.svg)](https://codeclimate.com/github/nowhere-nobodies/nowhere)
 
+
+## About
+
+Installation notes can be found below.
+
 (will probably be) Deployed on heroku
   * Master - http://goingnowhere.herokuapp.com
   * Dev - http://goingnowhere-dev.herokuapp.com
 
 [Log to STDIO](https://github.com/heroku/rails_stdout_logging)
 
-Installation notes can be found below.
-
-
-## Spring
-
-This app uses Spring, which is a tool that makes Rails applications load
-faster, but it might prevent backend code from reloading correctly.
-
-If you think your application is running old code, run `spring stop`. And if
-you'd rather not use spring, add `DISABLE_SPRING=1` to your login file.
-
 
 ## Test it
 
 ```sh
-bundle exec rake test
-bundle exec rubocop
+bundle exec rake
 ```
 
 
@@ -81,6 +74,15 @@ bundle exec rake db:migrate
 bundle exec rails server
 open http://localhost:3000/
 ```
+
+
+## Spring
+
+This app uses Spring, which is a tool that makes Rails applications load
+faster, but it might prevent backend code from reloading correctly.
+
+If you think your application is running old code, run `spring stop`. And if
+you'd rather not use spring, add `DISABLE_SPRING=1` to your login file.
 
 
 ## Notes
