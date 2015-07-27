@@ -11,9 +11,10 @@ gem 'uglifier', '>= 1.3.0' # CSS minification
 gem 'autoprefixer-rails'   # CSS vendor prefixing for compatibility
 gem 'normalize-rails'      # CSS reset
 
+gem 'devise' # authentication
+
 
 gem 'flutie' # Title and body class view helpers
-
 
 gem 'turbolinks'         # Go faster stripes
 gem 'jbuilder', '~> 2.0' # DSL for building JSON structures
