@@ -1,6 +1,11 @@
 language: ruby
 
 sudo: false
+cache: bundler
 
 notifications:
   email: false
+
+before_script:
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate

@@ -35,7 +35,8 @@ group :development, :test do
 
   # Testing
   gem 'rspec-rails'
-  gem 'rubocop'                     # Style linting
+  gem 'rubocop'                     # Ruby style linting
+  gem 'rubocop-rspec'               # Test style linting
   gem 'guard-rspec', require: false # Run tests on changes
 
   # Code analysis
