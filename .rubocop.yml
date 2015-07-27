@@ -43,4 +43,4 @@ Metrics/MethodLength:
 
 Style/TrailingComma:
   Enabled: true
-
+  EnforcedStyleForMultiline: comma

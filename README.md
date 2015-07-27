@@ -72,6 +72,10 @@ bundle install --no-document
 bundle exec rake db:create
 bundle exec rake db:migrate
 
+# Seed the database
+bundle exec rake db:seed
+# Fill in user details here...
+
 # Run the server
 bundle exec rails server
 open http://localhost:3000/
