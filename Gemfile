@@ -1,33 +1,33 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.3'
-gem 'pg', '0.18.2'
+gem 'rails', '4.2.3' # Web framework
+gem 'pg', '0.18.2'   # Database connection
 
 # Assets
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'jquery-rails'
-gem 'autoprefixer-rails'
-gem 'normalize-rails'
-gem 'quiet_assets', group: :development
+gem 'jquery-rails' # Rails 'unobtrusive' JS library
+
+gem 'sass-rails', '~> 5.0' # SCSS compilation
+gem 'uglifier', '>= 1.3.0' # CSS minification
+gem 'autoprefixer-rails'   # CSS vendor prefixing for compatibility
+gem 'normalize-rails'      # CSS reset
 
 
-# View helpers
-gem 'flutie' # Title and body class helpers
+gem 'flutie' # Title and body class view helpers
 
 
-gem 'turbolinks' # Go faster stripes
+gem 'turbolinks'         # Go faster stripes
+gem 'jbuilder', '~> 2.0' # DSL for building JSON structures
 
-gem 'jbuilder', '~> 2.0'
-
-gem 'sdoc', '~> 0.4.0', group: :doc # bundle exec rake doc:rails
+group :doc do
+  gem 'sdoc', '~> 0.4.0' # Generate rails docs with bundle exec rake doc:rails
+end
 
 
 group :development, :test do
   # Debugging
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.0' # REPL in error pages
 
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
@@ -35,8 +35,8 @@ group :development, :test do
 
   # Testing
   gem 'rspec-rails'
-  gem 'rubocop'
-  gem 'guard-rspec', require: false
+  gem 'rubocop'                     # Style linting
+  gem 'guard-rspec', require: false # Run tests on changes
 
   # Code analysis
   gem 'flay',        require: false
@@ -44,6 +44,8 @@ group :development, :test do
 
   # Security analysis
   gem 'brakeman',    require: false
+
+  gem 'quiet_assets' # Don't log requests to assets
 end
 
 

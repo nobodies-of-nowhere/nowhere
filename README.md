@@ -20,6 +20,8 @@ Installation notes can be found below.
 
 ```sh
 bundle exec rake
+# Or if you want the tests to re-run on file changes...
+bundle exec guard
 ```
 
 
