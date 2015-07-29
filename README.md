@@ -43,16 +43,20 @@ bundle exec flay .
 
 ## Setup
 
-This setup presumes OSX, because I'm too lazy to type Linux stuff. Kinda silly,
-as I'm typing this on Linux.
+This setup presumes OSX, and also presumes you do not have a Ruby development
+environment set up on your machine.
+
+Open an issue if you would like instructions for another platform, i.e. Linux.
 
 ```sh
+# Fork the project with the github website...
+
 # Get the project directory
 cd ~/wherever/you/keep/your/projects/
-git clone https://github.com/JenBerry/nowhere
+git clone git@github.com:YOUR-USERNAME/nowhere.git
 cd nowhere
 
-# Install ruby version manager
+# Install rbenv, the ruby environment manager
 brew update
 brew install rbenv ruby-build
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
@@ -62,6 +66,9 @@ bash
 
 # Install ruby 
 rbenv install $(cat .ruby-version)
+
+# Install node.js
+brew install node
 
 # Install ruby deps
 gem install bundler
