@@ -100,3 +100,4 @@ you'd rather not use spring, add `DISABLE_SPRING=1` to your login file.
 * [Rack Canonical Host](https://github.com/tylerhunt/rack-canonical-host)
 * [High Voltage Static pages](https://github.com/thoughtbot/high_voltage)
 * [Bullet query profiler](https://github.com/flyerhzm/bullet)
+* [Bundler audit deps checker](https://github.com/rubysec/bundler-audit)
