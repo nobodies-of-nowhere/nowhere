@@ -35,6 +35,26 @@ RSpec.describe UsersController, type: :controller do
         expect(subject).to redirect_to index
       end
     end
+
+    describe '#destroy' do
+      before  { user.save! }
+      subject { delete :destroy, id: user.id }
+
+      it 'does not delete the user from the DB' do
+        expect { subject }.not_to change { User.count }
+      end
+
+      it 'locks the user' do
+        subject
+        user.reload
+        expect(user).to be_access_locked
+      end
+
+      it 'redirects to index' do
+        index = users_path notice: 'User account was successfully disabled.'
+        expect(subject).to redirect_to index
+      end
+    end
   end
 
   context 'when not signed in' do
@@ -55,6 +75,21 @@ RSpec.describe UsersController, type: :controller do
 
       it 'does not allow you save a new user to the database' do
         expect { subject }.not_to change { User.count }
+      end
+
+      it 'redirects to sign in' do
+        expect(subject).to redirect_to new_user_session_path
+      end
+    end
+
+    describe '#destroy' do
+      before  { user.save! }
+      subject { delete :destroy, id: user.id }
+
+      it 'does not allow you to lock the user' do
+        subject
+        user.reload
+        expect(user).not_to be_access_locked
       end
 
       it 'redirects to sign in' do
