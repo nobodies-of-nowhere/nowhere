@@ -18,6 +18,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.lock_access!
+    redirect_to action: :index,
+                notice: 'User account was successfully disabled.'
+  end
+
   private
 
   def user_params

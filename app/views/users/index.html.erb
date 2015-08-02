@@ -1,6 +1,7 @@
 <% @users.each do |user| %>
   <p>
   <%= user.email %>
+  <%= link_to 'Close user account', user, method: :delete %>
   </p>
 <% end %>
 

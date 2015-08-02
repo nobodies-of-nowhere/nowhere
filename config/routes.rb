@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'temp#index'
 
-  resources :users, only: %i(index new create)
-  devise_for :users
+  devise_for :users # Must be before users resource
+  resources :users, only: %i(index new create destroy)
 end
